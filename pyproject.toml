@@ -7,6 +7,7 @@ dependencies = [
     "django-stubs>=6.0.5",
     "djangorestframework>=3.16.1",
     "djangorestframework-stubs>=3.17.0",
+    "faker>=40.19.1",
     "gunicorn>=26.0.0",
     "pillow>=11.3.0",
     "psycopg[binary]>=3.2",

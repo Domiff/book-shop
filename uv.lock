@@ -24,6 +24,7 @@ dependencies = [
     { name = "django-stubs" },
     { name = "djangorestframework" },
     { name = "djangorestframework-stubs" },
+    { name = "faker" },
     { name = "gunicorn" },
     { name = "pillow" },
     { name = "psycopg", extra = ["binary"] },
@@ -42,6 +43,7 @@ requires-dist = [
     { name = "django-stubs", specifier = ">=6.0.5" },
     { name = "djangorestframework", specifier = ">=3.16.1" },
     { name = "djangorestframework-stubs", specifier = ">=3.17.0" },
+    { name = "faker", specifier = ">=40.19.1" },
     { name = "gunicorn", specifier = ">=26.0.0" },
     { name = "pillow", specifier = ">=11.3.0" },
     { name = "psycopg", extras = ["binary"], specifier = ">=3.2" },
@@ -138,6 +140,18 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/9d/a1/45e25dab89b3dfc5da7a138f7e82aca4e970269c53a3fceed1e94b31d390/djangorestframework_stubs-3.17.0.tar.gz", hash = "sha256:74c0307cad304c03c15aee5955ec2fdeab0ac854b5bea569dc124892792e2b96", size = 33115, upload-time = "2026-05-13T18:58:36.554Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/72/ff/6e27d4aea12f67d14e0c0ec41869307ae98ad3816858ddc2a56bc3f4e0b5/djangorestframework_stubs-3.17.0-py3-none-any.whl", hash = "sha256:babe2703f0401507780848439f49f76222a178b4fc73a6dcb30d0952a0a6dbc6", size = 57629, upload-time = "2026-05-13T18:58:34.779Z" },
+]
+
+[[package]]
+name = "faker"
+version = "40.19.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "tzdata", marker = "sys_platform == 'win32'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/15/01/28c8ddae8caaf82c929655000963d83e3f01265a9af34e823c2ef2eee8ac/faker-40.19.1.tar.gz", hash = "sha256:76fa71fd3bf320db25e5504eb356f9a76b8a95cd6098524d006f446035b6b89d", size = 1969318, upload-time = "2026-05-22T15:57:37.433Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/49/b4/40a1ec12ec834604f3848143343baf1c67bc9a1096e401907eaa0d25876a/faker-40.19.1-py3-none-any.whl", hash = "sha256:265259b37c013838baaae34940207288170df385d6c5281413fce56a3504d580", size = 2007643, upload-time = "2026-05-22T15:57:35.867Z" },
 ]
 
 [[package]]
