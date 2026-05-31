@@ -55,6 +55,7 @@ class CreateUpdateRecipeTest(TestCase):
 
     @classmethod
     def tearDownClass(cls):
+        super().tearDownClass()
         shutil.rmtree(TEMP_MEDIA_ROOT, ignore_errors=True)
 
     def test_create(self):
