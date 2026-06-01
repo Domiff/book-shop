@@ -48,8 +48,8 @@ services:
       - "${WEB_PORT}:8000"
     env_file: .env
     volumes:
-      - uploads:/app/uploads
-      - staticfiles:/app/staticfiles
+      - ./uploads:/app/uploads
+      - ./staticfiles:/app/staticfiles
     depends_on:
       db:
         condition: service_healthy
