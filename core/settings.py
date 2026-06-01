@@ -96,3 +96,5 @@ LOGIN_REDIRECT_URL = "/shop"
 LOGOUT_REDIRECT_URL = reverse_lazy("books:main")
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+CSRF_TRUSTED_ORIGINS = [os.environ.get("CSRF_TRUSTED_ORIGIN", "http://127.0.0.1:8080")]
