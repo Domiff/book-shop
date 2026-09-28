@@ -11,7 +11,6 @@ COPY pyproject.toml uv.lock ./
 RUN uv sync --frozen --no-install-project --no-dev
 
 COPY . .
-RUN uv sync --frozen --no-dev
 
 
 FROM python:3.12-slim-bookworm AS runtime
