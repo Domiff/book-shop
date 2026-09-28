@@ -23,6 +23,7 @@ dev = [
 [tool.ruff]
 target-version = "py311"
 line-length = 88
+src = ["backend"]
 exclude = ["*/migrations/*"]
 
 [tool.ruff.lint]
@@ -30,6 +31,6 @@ select = ["E", "F", "I", "UP", "B"]
 
 [tool.ruff.lint.per-file-ignores]
 "*/migrations/*" = ["ALL"]
-"core/settings/*" = ["E501"]
-"core/settings/__init__.py" = ["F403"]
-"manage.py" = ["E402"]
+"backend/core/settings/*" = ["E501"]
+"backend/core/settings/__init__.py" = ["F403"]
+"backend/manage.py" = ["E402"]

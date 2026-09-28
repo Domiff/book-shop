@@ -10,7 +10,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 
 from django.urls import reverse_lazy
 
-from .env import BASE_DIR, env
+from .env import ROOT_DIR, env
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = env("SECRET_KEY")
@@ -73,11 +73,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = "static/"
-STATICFILES_DIRS = [BASE_DIR / "static"]
-STATIC_ROOT = BASE_DIR / "staticfiles"
+STATICFILES_DIRS = [ROOT_DIR / "static"]
+STATIC_ROOT = ROOT_DIR / "staticfiles"
 
 MEDIA_URL = "upload/"
-MEDIA_ROOT = BASE_DIR / "uploads"
+MEDIA_ROOT = ROOT_DIR / "uploads"
 
 LOGIN_URL = reverse_lazy("books:main")
 LOGIN_REDIRECT_URL = "/shop"

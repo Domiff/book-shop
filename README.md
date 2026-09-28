@@ -25,10 +25,16 @@ Online book store built with Django. Browse and search the catalog in the browse
 ## Apps
 
 ```
-core/       — project settings and routing
-books/      — catalog models, templates, and web views
-api/        — DRF viewset and serializers
-auth_user/  — registration and session auth
+backend/
+  core/       — project settings and routing
+  books/      — catalog models, templates, and web views
+  api/        — DRF viewset and serializers
+  auth_user/  — registration and session auth
+  manage.py
+  factories.py — test data factories
+nginx/        — nginx config
+grafana/      — grafana, loki, promtail configs
+static/       — project static files
 ```
 
 ## Models
@@ -47,6 +53,7 @@ cd book-shop-app
 
 uv sync
 cp .env.example .env   # set SECRET_KEY at minimum
+cd backend
 uv run python manage.py migrate
 uv run python manage.py createsuperuser
 uv run python manage.py runserver

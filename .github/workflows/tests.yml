@@ -54,4 +54,5 @@ jobs:
 
       - name: Run Django tests
         run: uv run python manage.py test
+        working-directory: backend
         

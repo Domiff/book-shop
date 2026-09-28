@@ -3,13 +3,13 @@ Database settings.
 https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 """
 
-from .env import BASE_DIR, env
+from .env import ROOT_DIR, env
 
 if env("DEBUG"):
     DATABASES = {
         "default": {
             "ENGINE": "django.db.backends.sqlite3",
-            "NAME": BASE_DIR / "db.sqlite3",
+            "NAME": ROOT_DIR / "db.sqlite3",
         }
     }
 else:

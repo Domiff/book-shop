@@ -8,7 +8,9 @@ from pathlib import Path
 import environ
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
+# BASE_DIR is the backend/ directory, ROOT_DIR is the repository root.
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
+ROOT_DIR = BASE_DIR.parent
 
 env = environ.Env(
     DEBUG=(bool, False),
@@ -21,4 +23,4 @@ env = environ.Env(
     CSRF_TRUSTED_ORIGIN=(str, "http://127.0.0.1:8080"),
 )
 
-environ.Env.read_env(BASE_DIR / ".env")
+environ.Env.read_env(ROOT_DIR / ".env")
